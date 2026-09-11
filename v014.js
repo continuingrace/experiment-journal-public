@@ -45,6 +45,19 @@
 })();
 
 (()=>{
+  window.restoreOverviewEditor=()=>{
+    const editor=document.getElementById('overviewEditor'),right=document.querySelector('.right');
+    if(editor&&right&&editor.parentElement!==right){editor.hidden=true;right.appendChild(editor)}
+    document.getElementById('modal')?.classList.remove('show');
+  };
+  window.mobileOverviewEdit=()=>{
+    modal('<h3>소개·하단 문구 편집</h3><p>큰 글자와 작은 글자의 문구·굵기·행간·자간을 각각 조절할 수 있습니다.</p><div id="mobileOverviewMount"></div><button class="btn" style="width:100%;margin-top:16px" onclick="restoreOverviewEditor()">닫기</button>');
+    const tab=document.getElementById('overviewTab');if(tab)tab.click();
+    setTimeout(()=>{const editor=document.getElementById('overviewEditor'),mount=document.getElementById('mobileOverviewMount');if(editor&&mount){mount.appendChild(editor);editor.hidden=false}},0);
+  };
+})();
+
+(()=>{
   const OVERVIEW_KEY='experiment-journal-overview-v1';
   const nl=String.fromCharCode(10);
   const defaults={
@@ -293,7 +306,7 @@
   if(publish)publish.onclick=()=>window.open(PUBLIC_RELEASE_URL,'_blank','noopener');
 })();
 (()=>{
-  const RELEASE_VERSION='0.3.15';
+  const RELEASE_VERSION='0.3.16';
   const SNAPSHOT_KEY='ej-release-snapshot-v1';
   const CONFIG_KEY='ej-publish-config-v1';
   const htmlEsc=(value)=>String(value==null?'':value).replace(/[&<>"']/g,(char)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -369,7 +382,7 @@
   mountReleaseActions();
 })();
 (()=>{
-  const EJ_VERSION='0.3.15';
+  const EJ_VERSION='0.3.16';
   const fontLink=document.createElement('link');
   if(!document.querySelector('link[data-ej-pretendard]')){fontLink.rel='stylesheet';fontLink.href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css';fontLink.dataset.ejPretendard='1';document.head.appendChild(fontLink)}
   if(typeof data==='undefined'||!data.overview)return;
