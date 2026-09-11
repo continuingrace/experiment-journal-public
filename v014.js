@@ -293,7 +293,7 @@
   if(publish)publish.onclick=()=>window.open(PUBLIC_RELEASE_URL,'_blank','noopener');
 })();
 (()=>{
-  const RELEASE_VERSION='0.3.9';
+  const RELEASE_VERSION='0.3.10';
   const SNAPSHOT_KEY='ej-release-snapshot-v1';
   const CONFIG_KEY='ej-publish-config-v1';
   const htmlEsc=(value)=>String(value==null?'':value).replace(/[&<>"']/g,(char)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -369,7 +369,7 @@
   mountReleaseActions();
 })();
 (()=>{
-  const EJ_VERSION='0.3.9';
+  const EJ_VERSION='0.3.10';
   const fontLink=document.createElement('link');
   if(!document.querySelector('link[data-ej-pretendard]')){fontLink.rel='stylesheet';fontLink.href='https://cdn.jsdelivr.net/gh/orioncactus/pretendard@v1.3.9/dist/web/static/pretendard.css';fontLink.dataset.ejPretendard='1';document.head.appendChild(fontLink)}
   if(typeof data==='undefined'||!data.overview)return;
@@ -407,7 +407,7 @@
       Array.from(group.children).filter(el=>/^exp/.test(el.id)).forEach(section=>{
         const item=data.experiments.find(exp=>exp.id===section.id);
         const eyebrow=section.querySelector('.eyebrow');
-        if(item&&eyebrow){const next='실험 '+(item.num||'01')+' · '+(item.kicker||'');if(eyebrow.textContent!==next)eyebrow.textContent=next}
+        if(item&&eyebrow){const next='실험 '+(item.num||'01')+'. '+(item.title||'')+' | '+(item.kicker||'');if(eyebrow.textContent!==next)eyebrow.textContent=next}
       });
     });
   }
@@ -480,7 +480,7 @@
 (()=>{
   const defaults={'01':'스킬 공유하기 · 내 데이터로 나만의 요약 워크플로우 만들기','02':'일관성 있는 아이콘 세트 만들기 · 나만의 캐릭터 에셋 만들고 연출별 3컷 만들기','03':'유용한 MCP 소개하기'};
   const topics=()=>{data.overview=data.overview||{};data.overview.cycleTopics=Object.assign({},defaults,data.overview.cycleTopics||{});return data.overview.cycleTopics};
-  const apply=()=>{const values=topics();document.querySelectorAll('#sections .cycle-group').forEach(group=>{const cycle=group.dataset.cycle||'01';const heading=group.querySelector('.cycle-group-heading strong');if(heading)heading.textContent='사이클 실험 '+cycle+(values[cycle]?' · '+values[cycle]:'')})};
+  const apply=()=>{const values=topics();document.querySelectorAll('#sections .cycle-group').forEach(group=>{const cycle=group.dataset.cycle||'01';const heading=group.querySelector('.cycle-group-heading strong');const next='사이클 '+Number(cycle)+(values[cycle]?' · '+values[cycle]:'');if(heading&&heading.textContent!==next)heading.textContent=next})};
   topics();setTimeout(apply,0);const root=document.getElementById('sections');if(root)new MutationObserver(()=>setTimeout(apply,0)).observe(root,{childList:true,subtree:true});
 })();
 
