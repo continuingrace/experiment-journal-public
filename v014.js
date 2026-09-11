@@ -443,3 +443,36 @@
   const sectionsRoot=document.getElementById('sections');if(sectionsRoot)new MutationObserver(()=>relabelCycles()).observe(sectionsRoot,{childList:true,subtree:true});
 })();
 (()=>{if(!location.pathname.includes('/experiment-journal-public/'))return;document.body.classList.add('public-readonly');const style=document.createElement('style');style.textContent='body.public-readonly .right{display:none!important}body.public-readonly .layout{grid-template-columns:220px minmax(0,1fr)!important}body.public-readonly #backupBtn,body.public-readonly #restoreBtn,body.public-readonly #saveVersionBtn,body.public-readonly #publishBtn,body.public-readonly #addExp{display:none!important}';document.head.appendChild(style)})();
+
+
+(()=>{
+  const labels={QUESTION:'질문',TRY:'시도',FRICTION:'막힌 지점',CHANGE:'바꾼 점',LEARNED:'배운 점',NEXT:'다음 실험'};
+  const style=document.createElement('style');
+  style.textContent='.ej-label-ko{display:inline-block;margin-left:6px;color:#9aa3a8;font-size:.82em;font-weight:400;letter-spacing:0}';
+  document.head.appendChild(style);
+  function apply(){
+    const root=document.getElementById('sections');
+    if(!root)return;
+    const walker=document.createTreeWalker(root,NodeFilter.SHOW_TEXT);
+    const nodes=[];
+    while(walker.nextNode()) nodes.push(walker.currentNode);
+    nodes.forEach(node=>{
+      if(node.parentElement&&node.parentElement.closest('.ej-label-ko'))return;
+      const re=/(^|\s)(QUESTION|TRY|FRICTION|CHANGE|LEARNED|NEXT)(?=\s|$)/g;
+      let match,last=0,frag=document.createDocumentFragment(),found=false;
+      while((match=re.exec(node.nodeValue))){
+        found=true;
+        frag.append(node.nodeValue.slice(last,match.index+match[1].length));
+        const en=match[2],span=document.createElement('span');
+        span.className='ej-label-ko';
+        span.textContent=labels[en];
+        frag.append(en,span);
+        last=re.lastIndex;
+      }
+      if(found){frag.append(node.nodeValue.slice(last));node.parentNode.replaceChild(frag,node);}
+    });
+  }
+  apply();
+  const root=document.getElementById('sections');
+  if(root)new MutationObserver(apply).observe(root,{childList:true,subtree:true});
+})();
