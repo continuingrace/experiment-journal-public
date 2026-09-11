@@ -293,7 +293,7 @@
   if(publish)publish.onclick=()=>window.open(PUBLIC_RELEASE_URL,'_blank','noopener');
 })();
 (()=>{
-  const RELEASE_VERSION='0.3.0';
+  const RELEASE_VERSION='0.3.1';
   const SNAPSHOT_KEY='ej-release-snapshot-v1';
   const CONFIG_KEY='ej-publish-config-v1';
   const htmlEsc=(value)=>String(value==null?'':value).replace(/[&<>"']/g,(char)=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[char]));
@@ -367,4 +367,11 @@
     if(!document.getElementById('saveVersionBtn')){const save=document.createElement('button');save.id='saveVersionBtn';save.className=publish.className||'btn desktop';save.type='button';save.textContent='완성본 저장';save.onclick=saveVersion;publish.parentElement.insertBefore(save,publish)}
   }
   mountReleaseActions();
+})();
+(()=>{
+  if(!location.pathname.includes('/experiment-journal-public/'))return;
+  document.body.classList.add('public-readonly');
+  const style=document.createElement('style');
+  style.textContent='body.public-readonly .right{display:none!important}body.public-readonly .layout{grid-template-columns:220px minmax(0,1fr)!important}body.public-readonly #backupBtn,body.public-readonly #restoreBtn,body.public-readonly #saveVersionBtn,body.public-readonly #publishBtn,body.public-readonly #addExp{display:none!important}';
+  document.head.appendChild(style);
 })();
