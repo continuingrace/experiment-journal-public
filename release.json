@@ -1,8 +1,8 @@
 {
-  "savedAt": "2026-09-12T13:11:33.740Z",
-  "version": "0.3.35",
+  "savedAt": "2026-09-12T14:09:57.090Z",
+  "version": "0.3.37",
   "data": {
-    "activeId": "exp2",
+    "activeId": "exp0",
     "experiments": [
       {
         "id": "exp0",
@@ -23,12 +23,6 @@
             "type": "image",
             "label": "Frame 2147203179.png",
             "src": "media/image-01.png"
-          },
-          {
-            "id": "m_17892104011449qnw",
-            "type": "image",
-            "label": "스크린샷 2026-08-05 155053.png",
-            "src": "media/image-02.png"
           }
         ],
         "coverId": "m_1789210381423kzo7",
@@ -53,13 +47,13 @@
             "id": "m_1789210784853tkcq",
             "type": "image",
             "label": "Group 11366.png",
-            "src": "media/image-03.png"
+            "src": "media/image-02.png"
           },
           {
             "id": "m_1789210784860ez9f",
             "type": "image",
             "label": "Group 11367.png",
-            "src": "media/image-04.png"
+            "src": "media/image-03.png"
           }
         ],
         "coverId": "m_1789210784853tkcq",
@@ -84,13 +78,13 @@
             "id": "m_1789211037403ckzp",
             "type": "image",
             "label": "Frame 1.png",
-            "src": "media/image-05.png"
+            "src": "media/image-04.png"
           },
           {
             "id": "m_1789211054824r4bo",
             "type": "video",
             "label": "kling_20260812_VIDEO_GPT캐릭터영상버전.mp4",
-            "src": "media/video-06.mp4"
+            "src": "media/video-05.mp4"
           }
         ],
         "coverId": "m_1789211037403ckzp",
@@ -115,25 +109,25 @@
             "id": "m_1789211258032jr6j",
             "type": "image",
             "label": "사이클과제2_gpt.jpg",
-            "src": "media/image-07.jpg"
+            "src": "media/image-06.jpg"
           },
           {
             "id": "m_1789211342509wgc1",
             "type": "video",
             "label": "kling_20260829_VIDEO_천천히_뛰는_모습__4946_0.mp4",
-            "src": "media/video-08.mp4"
+            "src": "media/video-07.mp4"
           },
           {
             "id": "m_17892113425229i9l",
             "type": "video",
             "label": "kling_20260829_VIDEO_토마토_볶음밥을_야_4768_0.mp4",
-            "src": "media/video-09.mp4"
+            "src": "media/video-08.mp4"
           },
           {
             "id": "m_1789213242889e9gy",
             "type": "image",
             "label": "KakaoTalk_20260903_154855459.png",
-            "src": "media/image-10.png"
+            "src": "media/image-09.png"
           }
         ],
         "coverId": "m_1789211258032jr6j",
@@ -158,19 +152,19 @@
             "id": "m_1789212498304wjrf",
             "type": "image",
             "label": "Frame 2147203180.png",
-            "src": "media/image-11.png"
+            "src": "media/image-10.png"
           },
           {
             "id": "m_1789211961595j6mf",
             "type": "image",
             "label": "스크린샷 2026-09-12 201134.png",
-            "src": "media/image-12.png"
+            "src": "media/image-11.png"
           },
           {
             "id": "m_17892119615904h0v",
             "type": "image",
             "label": "스크린샷 2026-09-12 200954.png",
-            "src": "media/image-13.png"
+            "src": "media/image-12.png"
           }
         ],
         "coverId": "m_1789212498304wjrf",
