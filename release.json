@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-09-12T11:41:06.017Z",
-  "version": "0.3.30",
+  "savedAt": "2026-09-12T13:11:33.740Z",
+  "version": "0.3.35",
   "data": {
     "activeId": "exp2",
     "experiments": [
@@ -20,17 +20,15 @@
         "media": [
           {
             "id": "m_1789210381423kzo7",
-            "key": "m_1789210381411_xrye47to21h",
             "type": "image",
             "label": "Frame 2147203179.png",
-            "objectUrl": "blob:https://continuingrace.github.io/45bd6e5c-6483-474b-b158-341b5c30d8b5"
+            "src": "media/image-01.png"
           },
           {
             "id": "m_17892104011449qnw",
-            "key": "m_1789210401136_3liuqfh4ha1",
             "type": "image",
             "label": "스크린샷 2026-08-05 155053.png",
-            "objectUrl": "blob:https://continuingrace.github.io/b8ab5c80-d3e4-4b0a-8fbf-aef4d7548ec5"
+            "src": "media/image-02.png"
           }
         ],
         "coverId": "m_1789210381423kzo7",
@@ -53,17 +51,15 @@
         "media": [
           {
             "id": "m_1789210784853tkcq",
-            "key": "m_1789210784844_2i3lyvgo2oj",
             "type": "image",
             "label": "Group 11366.png",
-            "objectUrl": "blob:https://continuingrace.github.io/dfa27c96-bf6e-4839-b988-907f4aebdaed"
+            "src": "media/image-03.png"
           },
           {
             "id": "m_1789210784860ez9f",
-            "key": "m_1789210784854_2p0g5p6zbxv",
             "type": "image",
             "label": "Group 11367.png",
-            "objectUrl": "blob:https://continuingrace.github.io/33c13b2c-0b50-492c-b6ad-83ef48e7831d"
+            "src": "media/image-04.png"
           }
         ],
         "coverId": "m_1789210784853tkcq",
@@ -86,17 +82,15 @@
         "media": [
           {
             "id": "m_1789211037403ckzp",
-            "key": "m_1789211037391_lfrt02uey7",
             "type": "image",
             "label": "Frame 1.png",
-            "objectUrl": "blob:https://continuingrace.github.io/acd8b4bd-5290-4a32-935f-aa703825345a"
+            "src": "media/image-05.png"
           },
           {
             "id": "m_1789211054824r4bo",
-            "key": "m_1789211054815_1815sxah2m6",
             "type": "video",
             "label": "kling_20260812_VIDEO_GPT캐릭터영상버전.mp4",
-            "objectUrl": "blob:https://continuingrace.github.io/293fd06e-5f62-420e-8db2-452b96054287"
+            "src": "media/video-06.mp4"
           }
         ],
         "coverId": "m_1789211037403ckzp",
@@ -119,31 +113,27 @@
         "media": [
           {
             "id": "m_1789211258032jr6j",
-            "key": "m_1789211258023_isu5yyaoynp",
             "type": "image",
             "label": "사이클과제2_gpt.jpg",
-            "objectUrl": "blob:https://continuingrace.github.io/68620029-7bab-48d4-9d57-eb22a12bfcd1"
+            "src": "media/image-07.jpg"
           },
           {
             "id": "m_1789211342509wgc1",
-            "key": "m_1789211342494_3kjlm1fq5ww",
             "type": "video",
             "label": "kling_20260829_VIDEO_천천히_뛰는_모습__4946_0.mp4",
-            "objectUrl": "blob:https://continuingrace.github.io/42131678-9f0a-4a66-8a78-bd2bdf26c6a4"
+            "src": "media/video-08.mp4"
           },
           {
             "id": "m_17892113425229i9l",
-            "key": "m_1789211342510_wveos2w9o18",
             "type": "video",
             "label": "kling_20260829_VIDEO_토마토_볶음밥을_야_4768_0.mp4",
-            "objectUrl": "blob:https://continuingrace.github.io/92a198f5-f1ea-464f-9346-3f31641677e1"
+            "src": "media/video-09.mp4"
           },
           {
             "id": "m_1789213242889e9gy",
-            "key": "m_1789213242878_azgsv8w8unp",
             "type": "image",
             "label": "KakaoTalk_20260903_154855459.png",
-            "objectUrl": "blob:https://continuingrace.github.io/a256ddd2-41e7-45e4-96ee-6a55241a0147"
+            "src": "media/image-10.png"
           }
         ],
         "coverId": "m_1789211258032jr6j",
@@ -166,24 +156,21 @@
         "media": [
           {
             "id": "m_1789212498304wjrf",
-            "key": "m_1789212498291_8n4bbrrd1rf",
             "type": "image",
             "label": "Frame 2147203180.png",
-            "objectUrl": "blob:https://continuingrace.github.io/76619373-c26f-4d06-bb27-bd40386bd2d8"
+            "src": "media/image-11.png"
           },
           {
             "id": "m_1789211961595j6mf",
-            "key": "m_1789211961591_ifgvehypxum",
             "type": "image",
             "label": "스크린샷 2026-09-12 201134.png",
-            "objectUrl": "blob:https://continuingrace.github.io/0d25e2d7-509d-4cd9-bbd1-c6c4a784fbcd"
+            "src": "media/image-12.png"
           },
           {
             "id": "m_17892119615904h0v",
-            "key": "m_1789211961584_1s0uwcms98z",
             "type": "image",
             "label": "스크린샷 2026-09-12 200954.png",
-            "objectUrl": "blob:https://continuingrace.github.io/cb39fbc5-91b6-46a6-9e99-eb1dfed42e53"
+            "src": "media/image-13.png"
           }
         ],
         "coverId": "m_1789212498304wjrf",
