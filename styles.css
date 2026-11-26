@@ -52,3 +52,6 @@
     text-wrap:pretty;
   }
 }
+
+/* v0.3.56 · concise resource links for review entries */
+.resource-links{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0 28px}.resource-links a{display:inline-flex;align-items:center;min-height:40px;padding:9px 14px;border:1px solid var(--line);border-radius:999px;background:#fff;color:var(--ink);font-size:14px;line-height:1.45;text-decoration:none}.resource-links a:hover{text-decoration:underline}.cycle .card:not(:has(.cover)) .body{padding-top:0!important}@media(max-width:760px){.resource-links{display:grid;grid-template-columns:1fr}.resource-links a{border-radius:14px}}
