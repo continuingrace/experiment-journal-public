@@ -1,5 +1,5 @@
 {
-  "savedAt": "2026-11-26T02:21:01.500Z",
+  "savedAt": "2026-11-26T02:23:46.219Z",
   "version": "0.3.57",
   "data": {
     "activeId": "exp0",
@@ -223,10 +223,33 @@
           {
             "label": "완성한 초대장",
             "url": "https://ihiriinvitation.vercel.app/i/ihiri_invitiation"
+          },
+          {
+            "label": "초대장 이미지 보드",
+            "url": "https://continuingrace.github.io/experiment-journal-public/invitation-visual-board.html"
           }
         ],
-        "media": [],
-        "coverId": null
+        "media": [
+          {
+            "id": "invitation-cover-original",
+            "type": "image",
+            "label": "초대장 커버 원본 이미지",
+            "src": "https://raw.githubusercontent.com/continuingrace/invitation_01/main/public/figma/invitation-cover2-image.png"
+          },
+          {
+            "id": "invitation-hover-original",
+            "type": "image",
+            "label": "마우스 오버 이미지",
+            "src": "https://raw.githubusercontent.com/continuingrace/invitation_01/main/public/figma/Image2hover.png"
+          },
+          {
+            "id": "invitation-body-original",
+            "type": "image",
+            "label": "초대장 본문 일러스트",
+            "src": "https://raw.githubusercontent.com/continuingrace/invitation_01/main/public/figma/image2-1.png"
+          }
+        ],
+        "coverId": "invitation-cover-original"
       },
       {
         "id": "exp-motion-harness",
