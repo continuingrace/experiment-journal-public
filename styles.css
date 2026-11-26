@@ -79,3 +79,7 @@
 .motion-bgm-panel code{font-size:.91em;background:rgba(20,30,20,.05);border-radius:4px;padding:1px 4px}
 .motion-bgm-panel .motion-bgm-license{margin-top:24px;padding:18px 20px;border-radius:14px;background:#eee9df;font-size:14px;line-height:1.7;color:#464941}
 @media(max-width:760px){.motion-bgm-panel{padding-top:26px;margin-top:28px}.motion-bgm-panel h3{font-size:24px}.motion-bgm-panel>p{font-size:15px}.motion-bgm-panel .motion-bgm-license{padding:16px}}
+
+/* v0.3.68 — image file names are metadata, not visible gallery captions */
+.gallery figure:has(img) > figcaption,
+.cycle-gallery figure:has(img) > figcaption {display:none!important}
