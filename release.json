@@ -1,6 +1,6 @@
 {
   "savedAt": "2026-11-26T06:10:49.136Z",
-  "version": "0.3.65",
+  "version": "0.3.66",
   "data": {
     "activeId": "exp0",
     "experiments": [
@@ -281,12 +281,7 @@
           }
         ],
         "coverId": "motion-cycle5-figma-board",
-        "resources": [
-          {
-            "label": "Figma 모션 하네스 구성 시안",
-            "url": "https://www.figma.com/design/RSoltcenpXX4Wn1jn4TwdS/?node-id=872-656"
-          }
-        ],
+        "resources": [],
         "bgm": {
           "src": "kpitUoswh-ZYoagd4MWNcA.wav",
           "label": "업로드된 BGM WAV",
