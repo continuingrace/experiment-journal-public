@@ -31,3 +31,38 @@
 .motion-output video{width:100%!important;height:auto!important;aspect-ratio:16/9!important;object-fit:contain!important;border-radius:13px!important;background:#f5f5f5!important;display:block!important}
 .motion-output figcaption{position:static!important;background:transparent!important;color:var(--muted)!important;margin:12px 0 0!important;padding:0!important;font-size:14px!important}
 @media(max-width:760px){.cycle>header{margin:48px 0 18px!important}.cycle>header strong{font-size:20px!important;line-height:1.48!important}.ej-live-cols{grid-template-columns:1fr}.ej-live-board{padding:18px;gap:18px}.ej-stage{min-height:190px}.ej-tree span{font-size:12px}}
+
+/* v0.3.67 · consistent editorial rhythm */
+.ej-diagram-cover .ej-live-board{padding:clamp(24px,3vw,40px)!important;gap:24px!important;font-family:Pretendard,-apple-system,BlinkMacSystemFont,"Apple SD Gothic Neo",sans-serif!important;letter-spacing:0!important}
+.ej-diagram-cover .ej-live-board>header>span{font-size:12px!important;line-height:1.5!important;letter-spacing:.06em!important}
+.ej-diagram-cover .ej-live-board>header>h3{font-size:clamp(23px,2.5vw,31px)!important;line-height:1.36!important;font-weight:750!important;letter-spacing:-.025em!important;margin:10px 0!important}
+.ej-diagram-cover .ej-live-board>header>p{font-size:15px!important;line-height:1.65!important;margin:9px 0 0!important}
+.ej-diagram-cover .ej-live-cols{grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:0!important;border-top:1px solid #cdd4cb!important}
+.ej-diagram-cover .ej-live-cols>section{background:transparent!important;padding:26px 28px 0!important;border-radius:0!important;box-shadow:none!important}
+.ej-diagram-cover .ej-live-cols>section:first-child{padding-left:0!important;border-right:1px solid #cdd4cb!important}
+.ej-diagram-cover .ej-live-cols>section:last-child{padding-right:0!important}
+.ej-diagram-cover .ej-live-cols small{font-size:12px!important;line-height:1.55!important}
+.ej-diagram-cover .ej-live-cols h4{font-size:clamp(19px,2vw,24px)!important;line-height:1.4!important;font-weight:750!important;letter-spacing:-.024em!important;margin:10px 0!important}
+.ej-diagram-cover .ej-live-cols>section>p{font-size:15px!important;line-height:1.6!important;margin:0 0 18px!important}
+.ej-diagram-cover .ej-tree{padding:18px!important;gap:13px!important}
+.ej-diagram-cover .ej-tree b{font-size:14px!important;line-height:1.55!important}
+.ej-diagram-cover .ej-tree span{font-size:13px!important;line-height:1.7!important}
+.ej-diagram-cover .ej-stage{min-height:240px!important}
+.ej-diagram-cover .ej-stage strong{font-size:clamp(28px,3vw,38px)!important;line-height:1.3!important}
+.ej-diagram-cover .ej-stage p{font-size:14px!important;line-height:1.55!important}
+.ej-diagram-cover .ej-steps span{font-size:15px!important;line-height:1.5!important}
+.ej-diagram-cover .ej-live-board>footer{border-top:1px solid #cdd4cb!important;padding-top:20px!important;gap:8px!important}
+.ej-diagram-cover .ej-live-board>footer span{font-size:12px!important;line-height:1.55!important}
+#exp-motion-harness .motion-output figcaption{display:none!important}
+#exp-motion-harness .motion-output .gallery figure{background:transparent!important}
+@media(max-width:760px){
+ .ej-diagram-cover .ej-live-board{padding:22px!important;gap:18px!important}
+ .ej-diagram-cover .ej-live-cols{grid-template-columns:minmax(0,1fr)!important}
+ .ej-diagram-cover .ej-live-cols>section{padding:22px 0!important}
+ .ej-diagram-cover .ej-live-cols>section:first-child{border-right:0!important;border-bottom:1px solid #cdd4cb!important}
+ .ej-diagram-cover .ej-live-cols>section:last-child{padding-bottom:0!important}
+ .ej-diagram-cover .ej-live-board>header>h3{font-size:23px!important}
+ .ej-diagram-cover .ej-live-cols h4{font-size:20px!important}
+ .ej-diagram-cover .ej-live-cols>section>p{font-size:14px!important}
+ .ej-diagram-cover .ej-stage{min-height:190px!important}
+}
