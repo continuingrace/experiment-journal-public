@@ -63,3 +63,19 @@
 .motion-output .gallery{grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;margin-top:22px}
 .motion-output .gallery video{width:100%;aspect-ratio:16/9;height:auto;max-height:none;object-fit:contain;background:#ece9e3}
 @media(max-width:760px){.motion-output .gallery{grid-template-columns:1fr}.motion-output{margin-top:32px}}
+
+/* v0.3.65 · MusicGen music-making process and usage notice */
+.motion-output .gallery{grid-template-columns:minmax(0,1fr);max-width:850px}
+.motion-bgm-panel{border-top:1px solid var(--line);margin-top:42px;padding-top:34px;max-width:850px}
+.motion-bgm-eyebrow{color:var(--muted);font-size:12px;font-weight:750;letter-spacing:.1em}
+.motion-bgm-panel h3{font-size:clamp(23px,2.3vw,31px);line-height:1.3;letter-spacing:-.025em;margin:13px 0}
+.motion-bgm-panel>p{font-size:16px;line-height:1.75;color:var(--muted)}
+.motion-bgm-panel audio{width:100%;display:block;margin:24px 0 8px}
+.motion-bgm-panel .motion-bgm-file{font-size:13px;line-height:1.5;margin:0;color:var(--muted)}
+.motion-bgm-panel a{color:var(--ink);text-underline-offset:3px}
+.motion-bgm-panel details{margin-top:24px;padding:19px 0;border-top:1px solid var(--line);border-bottom:1px solid var(--line)}
+.motion-bgm-panel summary{font-size:15px;font-weight:700;cursor:pointer}
+.motion-bgm-panel details p{font-size:14px;line-height:1.75;margin:16px 0;color:var(--muted);overflow-wrap:anywhere}
+.motion-bgm-panel code{font-size:.91em;background:rgba(20,30,20,.05);border-radius:4px;padding:1px 4px}
+.motion-bgm-panel .motion-bgm-license{margin-top:24px;padding:18px 20px;border-radius:14px;background:#eee9df;font-size:14px;line-height:1.7;color:#464941}
+@media(max-width:760px){.motion-bgm-panel{padding-top:26px;margin-top:28px}.motion-bgm-panel h3{font-size:24px}.motion-bgm-panel>p{font-size:15px}.motion-bgm-panel .motion-bgm-license{padding:16px}}
