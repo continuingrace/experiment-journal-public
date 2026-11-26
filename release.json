@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-11-26T05:45:07.790Z",
-  "version": "0.3.63",
+  "savedAt": "2026-11-26T05:53:23.621Z",
+  "version": "0.3.64",
   "data": {
     "activeId": "exp0",
     "experiments": [
@@ -272,10 +272,21 @@
             "type": "image",
             "label": "모션 하네스 설정 · Figma 구성 시안",
             "src": "media/cycle5-motion-figma-board.png"
+          },
+          {
+            "id": "motion-cycle5-bgm-a",
+            "type": "video",
+            "label": "완성 영상 · BGM 버전 A (20:59)",
+            "src": "media/mission-to-income-v2_2026-11-08_20-59-11.mp4"
+          },
+          {
+            "id": "motion-cycle5-bgm-b",
+            "type": "video",
+            "label": "완성 영상 · BGM 버전 B (21:00)",
+            "src": "media/mission-to-income-v2_2026-11-08_21-00-22.mp4"
           }
         ],
         "coverId": "motion-cycle5-figma-board",
-        "pendingVideoFile": "mission-to-income-v2_2026-11-08_20-59-11.mp4",
         "resources": [
           {
             "label": "Figma 모션 하네스 구성 시안",
