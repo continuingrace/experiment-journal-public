@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-11-26T05:42:16.179Z",
-  "version": "0.3.62",
+  "savedAt": "2026-11-26T05:45:07.790Z",
+  "version": "0.3.63",
   "data": {
     "activeId": "exp0",
     "experiments": [
@@ -266,9 +266,22 @@
         "applied": "타이핑을 점차 빨라지게 조정하고, 문구 등장 시점·게이지 채움·버튼 전환·엔딩 로고 움직임을 다듬었습니다. 수정 초안에서는 정지 프레임 비율이 56%에서 20%로 줄었지만, 이후 다른 수정본에서도 긴 멈춤이 남아 추가 검토했습니다. 효과음도 장면에 맞춰 배치했습니다.",
         "learned": "하네스가 기준과 작업 순서를 잡아 주더라도 영상의 리듬과 자연스러움은 직접 보고 판단해야 했습니다. 초안을 비교하고 구체적으로 피드백할수록 원하는 움직임에 가까워졌습니다.",
         "next": "타이핑 가속 곡선과 글자 추적 카메라 규칙을 문서화하고, 다음 영상에서도 반복해 검증하기",
-        "media": [],
-        "coverId": null,
-        "pendingVideoFile": "mission-to-income-v2_2026-11-08_20-59-11.mp4"
+        "media": [
+          {
+            "id": "motion-cycle5-figma-board",
+            "type": "image",
+            "label": "모션 하네스 설정 · Figma 구성 시안",
+            "src": "media/cycle5-motion-figma-board.png"
+          }
+        ],
+        "coverId": "motion-cycle5-figma-board",
+        "pendingVideoFile": "mission-to-income-v2_2026-11-08_20-59-11.mp4",
+        "resources": [
+          {
+            "label": "Figma 모션 하네스 구성 시안",
+            "url": "https://www.figma.com/design/RSoltcenpXX4Wn1jn4TwdS/?node-id=872-656"
+          }
+        ]
       }
     ],
     "overview": {
