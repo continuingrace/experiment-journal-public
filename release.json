@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-11-26T02:11:58.580Z",
-  "version": "0.3.56",
+  "savedAt": "2026-11-26T02:21:01.500Z",
+  "version": "0.3.57",
   "data": {
     "activeId": "exp0",
     "experiments": [
@@ -205,7 +205,7 @@
       },
       {
         "id": "exp-invitation-challenge",
-        "num": "07",
+        "num": "",
         "cycle": "CH",
         "kind": "challenge",
         "kicker": "INVITATION",
@@ -230,7 +230,7 @@
       },
       {
         "id": "exp-motion-harness",
-        "num": "08",
+        "num": "07",
         "cycle": "05",
         "kicker": "MOTION HARNESS",
         "title": "모션 하네스로 영상 만들기",
