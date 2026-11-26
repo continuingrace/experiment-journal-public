@@ -1,6 +1,6 @@
 {
-  "savedAt": "2026-11-26T05:53:23.621Z",
-  "version": "0.3.64",
+  "savedAt": "2026-11-26T06:10:49.136Z",
+  "version": "0.3.65",
   "data": {
     "activeId": "exp0",
     "experiments": [
@@ -276,14 +276,8 @@
           {
             "id": "motion-cycle5-bgm-a",
             "type": "video",
-            "label": "완성 영상 · BGM 버전 A (20:59)",
+            "label": "모션 하네스 완성 영상",
             "src": "media/mission-to-income-v2_2026-11-08_20-59-11.mp4"
-          },
-          {
-            "id": "motion-cycle5-bgm-b",
-            "type": "video",
-            "label": "완성 영상 · BGM 버전 B (21:00)",
-            "src": "media/mission-to-income-v2_2026-11-08_21-00-22.mp4"
           }
         ],
         "coverId": "motion-cycle5-figma-board",
@@ -292,7 +286,31 @@
             "label": "Figma 모션 하네스 구성 시안",
             "url": "https://www.figma.com/design/RSoltcenpXX4Wn1jn4TwdS/?node-id=872-656"
           }
-        ]
+        ],
+        "bgm": {
+          "src": "kpitUoswh-ZYoagd4MWNcA.wav",
+          "label": "업로드된 BGM WAV",
+          "generator": "facebook/musicgen-small",
+          "license": "CC BY-NC 4.0",
+          "fileNameVerified": false,
+          "recordedSpec": "제작 기록: 41.2초, 48kHz 스테레오, -16.0 LUFS, True Peak -2.4 dBTP"
+        },
+        "bgmProcess": {
+          "model": "facebook/musicgen-small",
+          "prompt": "lo-fi jazz hop beat with a catchy flute and violin melody, chopped soul sample, punchy drums, deep bass, bright and energetic, 100 bpm, instrumental",
+          "seed": 41,
+          "generation": "Python transformers + torch, CPU 로컬 실행, 약 14초(max_new_tokens=700)",
+          "candidates": [
+            "candidate-hiphop-1.wav",
+            "candidate-hiphop-2.wav",
+            "candidate-melodic-1.wav",
+            "candidate-melodic-2.wav (채택)",
+            "candidate-mix-beat-melody.wav"
+          ],
+          "edit": "Python + NumPy(dj2.py)로 짧은 클립을 세 구간으로 늘리고 저역 스윕, 되감기·스터터, 고역 필터 드롭, 바이닐 노이즈·클릭 삽입",
+          "mastering": "FFmpeg acompressor(−28 dB ratio 6 → −20 dB ratio 3), loudnorm(I=−15,TP=−2,LRA=7), alimiter(0.95)",
+          "warnings": "MusicGen small 가중치 라이선스 CC BY-NC 4.0; 상업적 사용 전 권리 확인. 공개 및 재배포 시 출처·라이선스 조건 확인."
+        }
       }
     ],
     "overview": {
