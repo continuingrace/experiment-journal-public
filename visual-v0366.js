@@ -16,7 +16,10 @@ const motion=document.querySelector('#exp-motion-harness');
 const harnessArticle=cycle4?.querySelector('.experiment');
 const targets=[[harnessArticle,harness],[motion,setup]];
 for(const [article,board] of targets){
-const cover=article?.querySelector('.cover');if(!cover)continue;
+if(!article)continue;
+let cover=article.querySelector('.cover');
+if(!cover){cover=document.createElement('div');cover.className='cover';const body=article.querySelector('.card .body');if(body)body.before(cover);}
+if(!cover)continue;
 cover.innerHTML=board;cover.classList.add('ej-diagram-cover');
 }
 if(motion){
